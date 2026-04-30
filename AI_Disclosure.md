@@ -1,0 +1,3 @@
+# AI Usage
+
+ChatGPT was used to help develop this project. The AI assisted me with Django syntax and file structure (with double-checking this on the official documentation), along with helping me fix small bugs in the program. It also helped me write code for the HTML files, which I felt were not as important in this project as the database code itself. I designed the layout of the website and made small changes to the HTML page structure, including input box and submit button positions.
