@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Book</title>
+</head>
+<body>
+    <h1>Confirm Delete</h1>
+
+    <p>Are you sure you want to delete:</p>
+    <strong>{{ book.title }}</strong>
+
+    <form method="post">
+        {% csrf_token %}
+        <br>
+        <button type="submit">Yes, Delete</button>
+        <a href="/">Cancel</a>
+    </form>
+</body>
+</html>

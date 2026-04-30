@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genres</title>
+</head>
+<body>
+    <h1>Genres</h1>
+
+    <a href="/add-genre/">Add Genre</a> |
+    <a href="/">Back to Library</a>
+
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+
+        {% for genre in genres %}
+        <tr>
+            <td>{{ genre.name }}</td>
+            <td>
+                <a href="/edit-genre/{{ genre.id }}/">Edit</a> |
+                <a href="/delete-genre/{{ genre.id }}/">Delete</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="2">No genres found.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

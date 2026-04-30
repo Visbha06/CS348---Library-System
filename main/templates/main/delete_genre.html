@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Genre</title>
+</head>
+<body>
+    <h1>Confirm Delete</h1>
+
+    <p>
+        Are you sure you want to delete the genre:
+        <strong>{{ genre.name }}</strong>?
+    </p>
+
+    <p>
+        <em>All books in this genre will also be deleted.</em>
+    </p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+        <a href="/genres/">Cancel</a>
+    </form>
+</body>
+</html>

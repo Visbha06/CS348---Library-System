@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Genre</title>
+</head>
+<body>
+    <h1>Edit Genre</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <br>
+    <a href="/genres/">Cancel</a>
+</body>
+</html>
